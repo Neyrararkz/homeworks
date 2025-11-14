@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Часть 1. Теоретическая</h1>
+    <p>1. LocalStorage — это хранилище внутри самого браузера.
+        <br>2. SessionStorage, в оличие от localStorage,  хранит данные только до момента закрытия вкладки браузера.
+        <br>3. Потому что localStorage нужен, чтобы хранить данные неограниченное количество времени
+        <br>
+        <br>• Сохранение значения:
+        <br>localStorage.setItem("username", "Alice")
+        <br>• Получение значения:
+        <br>const user = localStorage.getItem("username")
+        <br>console.log(user)
+        <br>• Удаление значения:
+        <br>localStorage.removeItem("username")
+    </p>
+
+    <h1>Часть 2. Практическая (Базовая)</h1>
+    <div class="card">
+        <h2>1. Счётчик посещений:</h2>
+        <p>Вы открывали эту страницу <b id="visitCount"></b> раз(-a).</p>
+    </div class="card">
+   
+    <div class="card">
+        <h2>2. Любимая цитата:</h2>
+        <input type="text" id="quoteInput" placeholder="Ваша любимая цитата">
+        <button id="saveQuote">Сохранить</button>
+        <p>Твоя цитата: <i id="quote"></i></p>
+    </div class="card">
+    
+    <h1>Часть 3. Практическая (Продвинутая)</h1>
+    <div class="card">
+        <h2>3. Мини-приложение «Заметки»</h2>
+        <input type="text" id="noteInput" placeholder="Новая заметка">
+        <button id="addNote">Добавить</button>
+        <ul id="notesList"></ul>
+    </div class="card">
+
+    <div class="card">
+        <h2>4. Переключатель темы</h2>
+        <button id="changeTheme">Сменить тему</button>
+    </div class="card">
+
+    <script src="main.js"></script>
+</body>
+</html>

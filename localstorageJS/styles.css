@@ -1,0 +1,60 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+background-color: var(--bgbody);
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+input {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--input-bg);
+  color: var(--text);
+}
+button {
+  padding: 10px;
+  border: none;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border-radius: 5px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+:root {
+  --bg: #f9f9f9;
+  --bgbody: #d4d4d4;
+  --text: #333;
+  --input-bg: #fff;
+  --btn-bg: rgb(134, 69, 25);
+  --btn-text: #fff;
+}
+
+body.dark {
+  --bg: #121212;
+  --bgbody: #2e2e2e;
+  --text: #eee;
+  --input-bg: #1e1e1e;
+  --btn-bg: #243775;
+  --btn-text: #fff;
+}

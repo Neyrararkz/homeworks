@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 755px;
+}
+body .main-header .header {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(28, 43, 68);
+  color: white;
+  width: 1430px;
+  height: 80px;
+  border-radius: 50px;
+}
+body .main-header .header .logo {
+  display: flex;
+  align-items: center;
+}
+body .main-header .header .nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body .main-header .header .nav p {
+  font-size: 13px;
+}
+body .main-header .main-1 {
+  position: absolute;
+  top: -10px;
+  background-color: rgb(179, 190, 212);
+  width: 1500px;
+  height: 765px;
+}
+body .main-header .main-1 .main-1-text {
+  margin: 240px 200px;
+}
+body .main-header .main-1 .main-1-text .main-1-vid-text {
+  display: flex;
+  align-items: center;
+}
+body .main-header .main-1 .main-1-text .main-1-vid-text .main-1-vid {
+  position: relative;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main-header .main-1 .main-1-text .main-1-vid-text .main-1-vid .vid-ic {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  width: 70px;
+}
+body .main-header .main-1 .main-1-text .main-1-vid-text .main-1-vid .vid-pl {
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  width: 60px;
+}/*# sourceMappingURL=style.css.map */

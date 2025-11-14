@@ -1,0 +1,70 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #dedee4;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 180px;
+    padding: 20px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 12px;
+}
+.card img {
+    width: 30%;
+    border-radius: 50%;
+}
+.card p {
+    margin: 5px;
+}
+button {
+    background: #393842;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: white;
+    color: #393842;
+    border: 1px solid #393842;
+}
+.card.big {
+    width: 250px;
+    height: 300px;
+}
+
+#searchBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+input {
+    padding: 0 20px;
+    width: 720px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
