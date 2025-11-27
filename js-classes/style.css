@@ -1,0 +1,137 @@
+/* ------------------ ОБЩИЕ СТИЛИ ------------------ */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e0f0ff; /* светло-голубой фон */
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.app {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+}
+
+/* ------------------ ЗАГОЛОВОК ------------------ */
+h1 {
+  text-align: center;
+  color: #0d3b66;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* ------------------ КОНТРОЛЫ ------------------ */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls input,
+.controls select {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #a9cfe7;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.controls input:focus,
+.controls select:focus {
+  border-color: #3a86ff;
+  box-shadow: 0 0 8px rgba(58, 134, 255, 0.3);
+}
+
+button {
+  padding: 10px 15px;
+  background: #3a86ff;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #1f5ed0;
+}
+
+/* ------------------ ФИЛЬТРЫ ------------------ */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  flex: 1;
+  margin-right: 8px;
+  background: #a9d6ff;
+  color: #0d3b66;
+  font-weight: 500;
+}
+
+.filters button:last-child {
+  margin-right: 0;
+}
+
+.filters button:hover {
+  background: #3a86ff;
+  color: white;
+}
+
+/* ------------------ СПИСОК ЗАДАЧ ------------------ */
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e1f5fe;
+  padding: 12px 15px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+#taskList li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+#taskList li span {
+  font-weight: 500;
+  color: #0d3b66;
+}
+
+#taskList li em {
+  font-style: normal;
+  background: #3a86ff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+#taskList li button {
+  background: #ff5e5e;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+#taskList li button:hover {
+  background: #d64545;
+}

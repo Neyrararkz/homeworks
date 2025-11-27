@@ -53,11 +53,60 @@ const getShortWords = (words) => {
 //10
 function palindrome(str) {
     reverse = word.split('').reverse('').join('')
-    return reverse = str
+    return reverse === str
 }
 
+//11
+const factorial = (n) => {
+    for(let i=1; i<=n; i++){
+        n *= i
+    }
+    return n
+}
 
+//12
+function countWords(str) {
+    return str.trim().split(/\s+/).filter(word => word.length > 0).length
+}
 
+//13
+function findMax(arr) {
+    return Math.max(...arr)
+}
 
+//14
+const getUnique = (arr) => { 
+    return [...new Set(arr)]
+}
 
+//Задания со звездочкой
+//15
+function compose(f, g) {
+    return function(x) {
+        return f(g(x));
+    }
+}
+
+//16
+function debounce(func, delay) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout)
+        timeout = setTimeout(() => {
+            func(...args)
+        }, delay)
+    }
+}
+
+//17
+function groupByLength(words) {
+    let result = {};
+    for (let word of words) {
+        if (!result[word.length]) {
+            result[word.length] = [];
+        }
+        result[word.length].push(word);
+    }
+    return result;
+}
 

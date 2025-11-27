@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <h1>Список дел: </h1>
+        <div class="controls">
+            <input type="text" id="taskInput" placeholder="Введите задачу">
+            <select id="categorySelect">
+                <option value="study">Учеба</option>
+                <option value="home">Дом</option>
+                <option value="work">Работа</option>
+            </select>
+            <button id="addBtn">Добавить</button>
+        </div>
+        <div class="filters">
+            <button data-filter="all">Все</button>
+            <button data-filter="study">Учеба</button>
+            <button data-filter="home">Дом</button>
+            <button data-filter="work">Работа</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+
+    <script src="main.js"></script>    
+</body>
+</html>
