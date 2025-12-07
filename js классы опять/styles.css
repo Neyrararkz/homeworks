@@ -1,0 +1,273 @@
+/* ======== Общие стили ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    background: #f5f5f7;
+    color: #222;
+    padding-bottom: 80px;
+    height: 100vh;
+}
+
+/* ======== Header ======== */
+header {
+    background: white;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.tagline {
+    color: #777;
+    font-size: 14px;
+}
+
+.pill {
+    padding: 6px 14px;
+    background: #eef1ff;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #3341ff;
+    font-weight: 600;
+}
+
+/* ======== Основная сетка ======== */
+main {
+    width: 92%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1.35fr;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge, .bagde {
+    padding: 4px 10px;
+    background: #eee;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* ======== Toolbar ======== */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.search-input:focus {
+    outline: 2px solid #4d6bff30;
+}
+
+.filter-select {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 14px;
+}
+
+/* ======== Продукты ======== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    gap: 18px;
+}
+
+.product-card {
+    padding: 16px;
+    background: #fafafa;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: .2s;
+}
+
+.product-card:hover {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    color: #3341ff;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.btn-primary {
+    background: #3341ff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1f2cf5;
+}
+
+.btn-secondary {
+    background: #eee;
+}
+
+.btn-secondary:hover {
+    background: #ddd;
+}
+
+.btn-sm {
+    margin-top: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+/* ======== Корзина ======== */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 420px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    background: #fafafa;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    gap: 10px;
+}
+
+.cart-item-title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cart-qty {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.qty-btn {
+    width: 24px;
+    height: 24px;
+    background: #eef1ff;
+    border: none;
+    border-radius: 6px;
+    color: #3341ff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.qty-btn:hover {
+    background: #dfe4ff;
+}
+
+.remove-btn {
+    color: #ff4343;
+    cursor: pointer;
+    font-weight: 700;
+    background: none;
+    border: none;
+}
+
+.cart-total {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 18px;
+}
+
+.cart-total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.cart-total-price {
+    font-weight: 700;
+    color: #3341ff;
+    font-size: 18px;
+}
+
+/* ======== Flash message ======== */
+.flash {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 14px 20px;
+    background: #3341ff;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    font-size: 15px;
+    opacity: 0;
+    transition: .3s;
+    pointer-events: none;
+}
+
+.flash.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ======== Footer ======== */
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}

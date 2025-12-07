@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <div>
+        <div class="logo">MINI shop</div>
+        <div class="tagline">Пример использования классов в Javascript</div>
+    </div>
+
+    <div>
+        <span class="pill">Классы, Обьекты, DOM, События</span>
+    </div>
+    </header>
+    
+    <main>
+        <section class="card">
+            <h2>Каталог товаров <span class="pill" id="productCount"></span></h2>
+
+            <div class="toolbar">
+                <input 
+                type="text" 
+                id="searchInput"
+                class="search-input" 
+                placeholder="Поиск по названию">
+                <select id="categorFilter" class="filter-select">
+                    <option value="all">
+                        Все категории
+                    </option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="productsContainer">
+            </div>
+        </section>
+
+        <aside class="card">
+            <h2>Корзина <span class="bagde" id="cartBage">0 товаров</span></h2>
+
+            <div id="cartItemsContainer" class="cart-items">
+
+            </div>
+
+            <div class="cart-total">
+                <div class="cart-total-row">
+                    <span>Итого:</span>
+                    <span class="cart-total-price" id="cartTotal">0 тг</span>
+                </div>
+                <div class="cart-total-row">
+                    <span>Товаров:</span>
+                    <span id="cartCount">0</span>
+                </div>
+                <button class="btn btn-primary" id="checkoutBtn">
+                    Оформить заказ
+                </button>
+                <button class="btn btn-secondary btn-sm" id="clearCartBtn">
+                    Очистить корзину
+                </button>
+            </div>
+
+        </aside>
+    </main>
+    <div class="flash" id="flashMessage">
+
+    </div>
+    <footer>
+        All rights reserved | Как классы упрлавляют данными
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
