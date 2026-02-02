@@ -1,0 +1,99 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* app */
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* form */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* buttons */
+button {
+  padding: 6px 10px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #43a047;
+}
+
+/* list */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* card */
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.card-actions button {
+  background: #e0e0e0;
+  color: #000;
+}
+
+.card-actions button:hover {
+  background: #d5d5d5;
+}
+
+.delete {
+  background: #ff5252;
+  color: #fff;
+}
+
+.delete:hover {
+  background: #e53935;
+}
+
+/* total */
+.total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
